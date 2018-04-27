@@ -30,7 +30,7 @@ var SectionsContainer = function (_React$Component) {
             activeSection: props.activeSection,
             scrollingStarted: false,
             sectionScrolledPosition: 0,
-            windowHeight: 0
+            windowHeight: window.innerHeight
         };
 
         _this._handleMouseWheel = _this._handleMouseWheel.bind(_this);
@@ -220,7 +220,7 @@ var SectionsContainer = function (_React$Component) {
     }, {
         key: '_handleArrowKeys',
         value: function _handleArrowKeys(e) {
-            // if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+            // if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
             //     e.preventDefault(); // Prevent unwanted scrolling on Firefox
             // }
             var event = window.event ? window.event : e;

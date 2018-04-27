@@ -10,7 +10,7 @@ export default class SectionsContainer extends React.Component {
             activeSection: props.activeSection,
             scrollingStarted: false,
             sectionScrolledPosition: 0,
-            windowHeight: 0
+            windowHeight: window.innerHeight
         };
 
         this._handleMouseWheel = this._handleMouseWheel.bind(this);
